@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yaseen.fiveprayers">
+
+    <uses-sdk tools:overrideLibrary="androidx.core.splashscreen" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name="islam.muslim.app.FivePrayerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App">
+
+
+        <activity
+            android:name="islam.muslim.app.ui.DefaultActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="islam.muslim.app.ui.appintro.IntroActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="islam.muslim.app.ui.splashscreen.SplashScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="islam.muslim.app.ui.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="islam.muslim.app.ui.timingtable.TimingTableActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="islam.muslim.app.ui.report.ErrorActivity"
+            android:label="@string/error_title"
+            android:process=":error_activity" />
+        <activity
+            android:name="islam.muslim.app.ui.dailyverse.DailyVerseActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:excludeFromRecents="true" />
+
+        <receiver
+            android:name="islam.muslim.app.ui.widget.ClockHomeScreenWidgetProvider"
+            android:exported="false"
+            android:enabled="@bool/lollipopAbove">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/clock_home_screen_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name="islam.muslim.app.notifier.NotifierBootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="islam.muslim.app.notifier.AlarmPermissionReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="islam.muslim.app.notifier.NotifierReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="islam.muslim.app.notifier.ReminderReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="islam.muslim.app.notifier.SilenterReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="islam.muslim.app.notifier.NotifierActionReceiver"
+            android:enabled="true" />
+        <receiver android:name="islam.muslim.app.notifier.NotificationDismissedReceiver" />
+        <receiver
+            android:name="islam.muslim.app.ui.widget.HomeScreenWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/home_screen_widget_info" />
+        </receiver>
+        <receiver
+            android:name="islam.muslim.app.ui.widget.NextPrayerHomeScreenWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/next_prayer_home_screen_widget_info" />
+        </receiver>
+        <receiver
+            android:name="islam.muslim.app.notifier.CustomMediaButtonReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="islam.muslim.app.notifier.DailyVerseReceiver"
+            android:enabled="true" />
+        <!-- Disable androidx.startup only for WorkManagerInitializer -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+
+            <!-- If you are using androidx.startup to initialize other components -->
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"
+                tools:node="remove" />
+        </provider>
+    </application>
+
+</manifest>

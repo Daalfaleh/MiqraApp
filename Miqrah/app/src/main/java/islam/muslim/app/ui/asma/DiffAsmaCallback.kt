@@ -1,0 +1,19 @@
+package islam.muslim.app.ui.asma
+
+import islam.muslim.app.models.AsmaModel
+import islam.muslim.app.models.NamesModel
+import androidx.recyclerview.widget.DiffUtil
+
+object DiffAsmaCallback : DiffUtil.ItemCallback<AsmaModel>() {
+    override fun areItemsTheSame(oldItem: AsmaModel, newItem: AsmaModel): Boolean {
+        return oldItem.pointer == newItem.pointer
+    }
+
+    override fun areContentsTheSame(oldItem: AsmaModel, newItem: AsmaModel): Boolean {
+        return oldItem.description == newItem.description
+                && oldItem.arabic == newItem.arabic
+                && oldItem.engDescription == newItem.engDescription
+                && oldItem.english == newItem.english
+                && oldItem.selectedIndex == newItem.selectedIndex
+    }
+}

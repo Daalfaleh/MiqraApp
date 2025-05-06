@@ -1,0 +1,452 @@
+<resources>
+    <string name="whats_new_dialog_title">ميزة جديدة</string>
+    <string name="whats_new_dialog_message">لقد أضفنا إشعارات الآية اليومية والوَدَجَة الجديدة مع معلومات الطقس</string>
+
+    <string name="about_five_prayers">حول التطبيق</string>
+    <string name="open_source_projects_used">مشاريع مفتوحة المصدر</string>
+    <string name="privacy_policy_title">سياسة خصوصية</string>
+    <string name="license_summary">رخصة غنو لعامة الشعب الإصدار 3</string>
+    <string name="start_accept_privacy_policy">من أجل الامتثال للائحة الأوروبية العامة لحماية البيانات (GDPR) ، فإننا نلفت انتباهك إلى سياسة خصوصية Five Prayers Android. يرجى قراءتها بعناية.
+\nو يجب عليك قبولها لإرسال تقرير الأخطاء إلينا.</string>
+    <string name="read_privacy_policy">الإطلاع على سياسة الخصوصية</string>
+    <string name="sorry_string">عذرا، لا ينبغي أن يحدث ذلك.</string>
+    <string name="what_happened_headline">ماذا حدث:</string>
+    <string name="info_labels">nلغة المحتوى:\\nتوقيت غرينتش:\\nالحزمة:\\nالإصدار:\\nOS الإصدار:</string>
+    <string name="what_device_headline">معلومات:</string>
+    <string name="error_details_headline">التفاصيل:</string>
+    <string name="your_comment">تعليقك (باللغة الإنجليزية):</string>
+    <string name="error_report_button_text">الإبلاغ عن هذا الخطأ عبر البريد الإلكتروني</string>
+    <string name="error_report_open_github_notice">يرجى التحقق مما إذا كانت هناك مشكلة في مناقشة تعطلك بالفعل. عند إنشاء تذاكر مكررة ، ستأخذ وقتًا منا يمكن أن نقضيه في إصلاح الخطأ الفعلي.</string>
+    <string name="copy_for_github">نسخ تقرير منسق</string>
+    <string name="error_report_open_issue_button_text">تقرير على جيثب</string>
+    <string name="msg_copied">تم نسخه إلى الحافظة</string>
+    <string name="share_dialog_title">مشاركة بواسطة</string>
+    <string name="permission_denied">تم رفضها من قبل النظام</string>
+
+    <string name="common.accept">قبول</string>
+    <string name="common.decline">رفض</string>
+    <string name="common.cancel">إلغاء</string>
+    <string name="common.ok">موافق</string>
+    <string name="common.error">خطأ</string>
+    <string name="common_alert">إنذار</string>
+    <string name="common_page">صفحة</string>
+    <string name="common.loading">جار التحميل …</string>
+    <string name="common.sunrise">شروق الشمس</string>
+    <string name="common.sunset">غروب الشمس</string>
+    <string name="common.close">إغلاق</string>
+    <string name="common.license">رخصة التطبيق</string>
+    <string name="common.offline">غير متصل على الانترنت</string>
+    <string name="common.minutes">دقيقة</string>
+    <string name="common.hours.separator">س</string>
+    <string name="common.minutes.separator">د</string>
+    <string name="common.in">بعد</string>
+    <string name="common.at">على</string>
+    <string name="common.update">تحديث</string>
+
+    <string name="location_alert_title">خطأ في الحصول على الموقع</string>
+    <string name="location_alert_settings_button_title">تمكين الوصول إلى الموقع</string>
+    <string name="location_alert_manual_position_button_title">اضبط الموقع يدويًا</string>
+
+    <string name="app_name">خمس صلوات</string>
+    <string name="title_home">صلاة</string>
+    <string name="title_dashboard">خدمات</string>
+    <string name="title_settings">الإعدادات</string>
+    <string name="label.unknown_location">موقع غير معروف</string>
+
+    <!-- Widgets -->
+    <string name="simple_widget_description">ودجت بسيط</string>
+    <string name="clock_widget_description">ودجت مع الساعة</string>
+    <string name="next_prayer_widget_description">ودجت مع الصلاة المقبلة</string>
+
+    <!-- App Theme preferences -->
+    <string name="theme_preference_section">إعدادات المظهر</string>
+    <string name="theme_preference_title">لون المظهر</string>
+    <string name="theme_preference_dialog_title">اختر لون المظهر المفضل لديك</string>
+    <string name="theme_preference_name_white_blue">السماء الزرقاء (افتراضي)</string>
+    <string name="theme_preference_name_dark_orange">ليلة برتقالية</string>
+    <string name="theme_preference_name_dark_Turquoise">الشفق الليلي</string>
+    <string name="theme_preference_use_arabic_locale">الوضع العربي</string>
+    <string name="theme_preference_use_arabic_locale_summay">سيتم تحويل التطبيق إلى اللغة العربية</string>
+    <string name="theme_preference_numerals_title">نوع الأرقام</string>
+    <string name="theme_preference_numerals_dialog_title">اختر نوع الأرقام</string>
+    <string name="theme_preference_numerals_type_arabic_indic">الأرقام العربية الهندية</string>
+    <string name="theme_preference_numerals_type_arabic">الأرقام العربية</string>
+
+    <string name="calendar_view_title">تقويم الصلاة في</string>
+    <string name="title_calendar">تقويم الصلاة</string>
+    <string name="desc_calendar_view_title">طاولة الصلاة الشهرية</string>
+
+    <string name="last_update_time_key">last_update_time_key</string>
+
+    <!-- App Intro -->
+    <string name="app_intro_frag_1_title">خمس صلوات للأندرويد</string>
+    <string name="app_intro_frag_1_description">مجموعة مفتوحة المصدر من الأدوات الإسلامية والخالية من الإعلانات.</string>
+
+    <string name="app_intro_frag_2_title">سياسة الخصوصية</string>
+    <string name="app_intro_frag_2_description">يهدف مشروع Five Prayers Android إلى توفير وصول خاص و
+        تجربة خالية من الإعلانات لجميع المستخدمين. لذلك لا يقوم التطبيق بجمع أي بيانات دون موافقتك.</string>
+    <string name="app_intro_frag_3_title">نحن بحاجة إلى إذنك</string>
+    <string name="app_intro_frag_3_description">من أجل حساب أوقات الصلاة بكفاءة
+        يحتاج هذا التطبيق إلى إذنك لمعرفة موقع هاتفك. (موصى به)</string>
+
+    <string name="app_intro_frag_3_5_description">نحتاج أيضًا إلى إذنك لاستخدام إمكانات الموقع في الخلفية
+        لتحديث مواقيت الصلاة دون فتح التطبيق ، يرجى تحديد خيار السماح طوال الوقت في الشاشة التالية (موصى به)</string>
+    <string name="app_intro_frag_4_title">استمتع !</string>
+    <string name="app_intro_frag_4_description">تقدم Five Prayers Android ميزات رائعة لجميع المستخدمين
+مثل: أوقات الصلاة حول العالم ، طرق حساب مختلفة ، إشعارات ، قراءة الأذان ، إتجاه القبلة والمزيد …</string>
+
+    <string name="app_intro_permission_denied_dialog_title">إعلام</string>
+    <string name="app_intro_permission_denied_dialog_message">يحتاج التطبيق إلى معرفة موقعك لحساب مواقيت الصلاة بشكل صحيح. يمكنك ضبط موقعك يدويًا في شاشة الإعدادات.</string>
+
+    <string name="FAJR">الصبح (الفجر)</string>
+    <string name="SUNRISE">الشروق</string>
+    <string name="DOHA">الضحى</string>
+    <string name="DHOHR">الظهر</string>
+    <string name="ASR">العصر</string>
+    <string name="MAGHRIB">المغرب</string>
+    <string name="ICHA">العشاء</string>
+    <string name="LAST_THIRD_OF_THE_NIGHT">الثلث الأخير من الليل</string>
+
+    <string name="SHORT_FAJR">الفجر</string>
+    <string name="SHORT_SUNRISE">الشروق</string>
+    <string name="SHORT_DHOHR">الظهر</string>
+    <string name="SHORT_ASR">العصر</string>
+    <string name="SHORT_MAGHRIB">المغرب</string>
+    <string name="SHORT_ICHA">العشاء</string>
+
+    <string name="FIRST_DAY_OF_YEAR">رأس السنة الهجرية</string>
+    <string name="YAWM_ASHURA">يوم عاشوراء</string>
+    <string name="MAWLID_A_NABAWI">المولد النبوي</string>
+    <string name="LAILAT_AL_MIRAJ">ليلة المعراج</string>
+    <string name="MID_SHAABAN_NIGHT">ليلة البراءة</string>
+    <string name="MID_SHAABAN">نصف شعبان</string>
+    <string name="FIRST_DAY_OF_RAMADAN">أول أيام رمضان</string>
+    <string name="DAY_20_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_21_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_22_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_23_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_24_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_25_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_26_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_27_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_28_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_29_OF_RAMADAN">العشر الاواخر</string>
+    <string name="DAY_30_OF_RAMADAN">العشر الاواخر</string>
+    <string name="EID_AL_FITR">عيد الفطر</string>
+    <string name="FIRST_DAY_OF_AL_Hajj">الحج</string>
+    <string name="DAY_OF_ARAFAH">يوم عرفة</string>
+    <string name="EID_AL_ADHA">عيد الأضحى</string>
+    <string name="FOURTH_DAY_OF_AL_Hajj">الحج</string>
+    <string name="FIFTH_DAY_OF_AL_Hajj">الحج</string>
+    <string name="SIXT_DAY_OF_AL_Hajj">الحج</string>
+
+    <string name="hijri">هجري</string>
+    <string name="hijri_month_1">محرم</string>
+    <string name="hijri_month_2">سفر</string>
+    <string name="hijri_month_3">ربيع الأول</string>
+    <string name="hijri_month_4">ربيع الثاني</string>
+    <string name="hijri_month_5">جمادى الأولى</string>
+    <string name="hijri_month_6">جمادى الثانية</string>
+    <string name="hijri_month_7">رجب</string>
+    <string name="hijri_month_8">شعبان</string>
+    <string name="hijri_month_9">رمضان</string>
+    <string name="hijri_month_10">شوال</string>
+    <string name="hijri_month_11">ذو القعدة</string>
+    <string name="hijri_month_12">ذو الحجة</string>
+
+    <string name="gps_settings_title" translatable="true">إعدادات GPS</string>
+    <string name="gps_settings_text" translatable="false">GPS غير ممكّن. هل تريد الذهاب إلى قائمة الإعدادات؟</string>
+    <string name="settings_button_ok" translatable="false">الإعدادات</string>
+    <string name="settings_button_cancel" translatable="false">إلغاء</string>
+
+    <string name="method_fajr_angle">زاوية الفجر</string>
+    <string name="method_ichaa_angle">زاوية العشاء</string>
+    <string name="method_shia_ithna_ansari">الشيعة اثنا عشري ، معهد ليفا للأبحاث ، قم</string>
+    <string name="method_university_of_islamic_sciences_karachi">جامعة العلوم الإسلامية - كراتشي</string>
+    <string name="method_islamic_society_of_north_america">الجمعية الإسلامية لأمريكا الشمالية</string>
+    <string name="method_muslim_world_league">الرابطة الإسلامية العالمية</string>
+    <string name="method_umm_al_qura_university_makkah">جامعة أم القرى - مكة المكرمة</string>
+    <string name="method_egyptian_general_authority_of_survey">الهيئة المصرية العامة</string>
+    <string name="method_institute_of_geophysics_university_of_tehran">معهد طهران للجيوفيزياء</string>
+    <string name="method_gulf_region">منطقة الخليج</string>
+    <string name="method_kuwait">طريقة الكويت</string>
+    <string name="method_qatar">طريقة قطر</string>
+    <string name="method_majlis_ugama_islam_singapura">مجلس سنغافورة الإسلامي الديني</string>
+    <string name="method_union_organization_islamic_de_france">اتحاد المنظمات الإسلامية بفرنسا (UOIF)</string>
+    <string name="method_diyanet_isleri_baskanligi_turkey">رئاسة الشؤون الدينية - تركيا</string>
+    <string name="method_spiritual_administration_of_muslims_of_russia">الإدارة الروحية لمسلمي روسيا</string>
+    <string name="method_mosquee_de_paris_france">مسجد باريس - فرنسا</string>
+    <string name="method_france_18">زاوية 18 درجة - فرنسا</string>
+    <string name="method_france_15">زاوية 15 درجة - فرنسا</string>
+    <string name="method_department_of_islamic_advancement_malaysia">جابتن كماجوان اسلام - مليسيا</string>
+    <string name="method_kementerian_agama_ri_indonesia">وزارة الدين بجمهورية - إندونيسيا</string>
+    <string name="method_moroccan_ministry_of_islamic_affairs">وزارة الشؤون الإسلامية - المغرب</string>
+    <string name="method_tunisian_ministry_of_religious_affairs">وزارة الشؤون الدينية - تونس</string>
+    <string name="method_algerian_ministry_of_religious_affairs_and_wakfs">وزارة الشؤون الدينية الجزائرية</string>
+    <string name="method_london_unified_prayer_times">أوقات الصلاة الموحدة في لندن</string>
+
+    <string name="short_method_shia_ithna_ansari">الشيعة اثنا عشري</string>
+    <string name="short_method_university_of_islamic_sciences_karachi">جامعة العلوم الإسلامية</string>
+    <string name="short_method_islamic_society_of_north_america">الجمعية الإسلامية لأمريكا الشمالية</string>
+    <string name="short_method_muslim_world_league">الرابطة الإسلامية العالمية</string>
+    <string name="short_method_umm_al_qura_university_makkah">جامعة أم القرى</string>
+    <string name="short_method_egyptian_general_authority_of_survey">الهيئة المصرية العامة</string>
+    <string name="short_method_institute_of_geophysics_university_of_tehran">معهد طهران للجيوفيزياء</string>
+    <string name="short_method_gulf_region">منطقة الخليج</string>
+    <string name="short_method_kuwait">طريقة الكويت</string>
+    <string name="short_method_qatar">طريقة قطر</string>
+    <string name="short_method_majlis_ugama_islam_singapura">مجلس سنغافورة الإسلامي</string>
+    <string name="short_method_union_organization_islamic_de_france">اتحاد المنظمات الإسلامية بفرنسا</string>
+    <string name="short_method_diyanet_isleri_baskanligi_turkey">رئاسة الشؤون الدينية</string>
+    <string name="short_method_spiritual_administration_of_muslims_of_russia">الإدارة الروحية لمسلمي روسيا</string>
+    <string name="short_method_moroccan_ministry_of_islamic_affairs">وزارة الشؤون الإسلامية</string>
+    <string name="short_method_department_of_islamic_advancement_malaysia">جابتن كماجوان اسلام</string>
+    <string name="short_method_kementerian_agama_ri_indonesia">وزارة الدين بجمهورية</string>
+    <string name="short_method_mosquee_de_paris_france">مسجد باريس</string>
+    <string name="short_method_france_18">زاوية 18 درجة - فرنسا</string>
+    <string name="short_method_france_15">زاوية 15 درجة - فرنسا</string>
+    <string name="short_method_tunisian_ministry_of_religious_affairs">وزارة الشؤون الدينية</string>
+    <string name="short_method_algerian_ministry_of_religious_affairs_and_wakfs">وزارة الشؤون الدينية الجزائرية</string>
+    <string name="short_method_london_unified_prayer_times">أوقات الصلاة الموحدة في لندن</string>
+
+    <string name="title_location_preference_section">الموقع</string>
+    <string name="sub_title_reminder_preference_section">تذكير الأذان</string>
+    <string name="sub_title_dhuha_reminder_preference_section">تذكير صلاة الضحى</string>
+    <string name="sub_title_lton_reminder_preference_section">تذكير الثلث الأخير من الليل</string>
+    <string name="title_checkbox_location_preference">أدخل موقعك يدويًا</string>
+    <string name="title_edit_text_location_preference">الموقع الحالي</string>
+    <string name="title_adhan_notifications_preference">تفعيل الإشعارات</string>
+    <string name="title_adhan_vibration_preference">تفعيل الاهتزاز</string>
+    <string name="title_douae_adhan_preference">تفعيل الدعاء بعد الأذان</string>
+    <string name="title_adhan_reminder_preference">تفعيل التذكير قبل الأذان</string>
+    <string name="title_enable_reminder_sound_preference">تفعيل التذكير</string>
+    <string name="title_reminder_sound_preference">تفعيل صوت التذكير</string>
+    <string name="title_doha_reminder_preference">تفعيل تذكير صلاة الضحى</string>
+    <string name="title_adhan_reminder_interval_preference">الفاصل الزمني للتذكير(دقائق)</string>
+    <string name="dialog_title_edit_text_location_preference">ابحث عن مدينتك</string>
+    <string name="title_prayer_timings_section">طرق الحساب</string>
+    <string name="title_calculation_method_preference">طريقة حساب تقويم الصلاة</string>
+    <string name="dialog_title_calculation_method_preference">طريقة حساب تقويم الصلاة</string>
+    <string name="title_edit_text_timing_adjustment_preference">ضبط أوقات الصلاة</string>
+    <string name="dialog_title_edit_text_timing_adjustment_preference">تعديل الجدول (بالدقائق)</string>
+    <string name="preference_title_contact">اتصل بنا</string>
+    <string name="preference_add_new_adhan">إضافة ملف الأذان</string>
+    <string name="preference_unable_add_new_adhan">تعذر إضافة ملف الأذان</string>
+
+    <string name="title_silenter_preference_section">وضع الصامت</string>
+    <string name="text_silenter_preference_section">تغيير الهاتف إلى وضع الصامت أثناء أوقات الصلاة</string>
+    <string name="error_summary_silenter_preference_section">لا يُسمح للتطبيق بالتغيير إلى حالة \'عدم الإزعاج\'</string>
+    <string name="title_silenter_start_time">وقت البدء بعد الأذان (بالدقائق)</string>
+    <string name="dialog_title_silenter_start_time">وقت البدء بعد الأذان (بالدقائق)</string>
+    <string name="title_silenter_duration">المدة (بالدقائق)</string>
+    <string name="title_silenter_duration_friday_prayer">المدة بعد صلاة الجمعة (بالدقائق)</string>
+    <string name="dialog_title_silenter_duration">المدة (بالدقائق)</string>
+
+    <string name="title_daily_verse_preference">تفعيل الآيات اليومية</string>
+
+    <string name="latitude_adjustment_method_middle_of_the_night">منتصف الليل</string>
+    <string name="latitude_adjustment_method_one_seventh">السابع من الليل</string>
+    <string name="latitude_adjustment_method_angle_based">على أساس التثليث</string>
+
+    <string name="title_latitude_adjustment_method">التكيف مع خطوط العرض العالية</string>
+    <string name="dialog_title_latitude_adjustment_method">اختر طريقة</string>
+
+    <string name="calendar">التقويم</string>
+    <string name="gregorian_hijri_calendar">التقويم الهجري والميلادي</string>
+    <string name="desc_gregorian_hijri_calendar">التواريخ والأعياد الهجرية</string>
+    <string name="title_hijri_day_adjustment_preference">تعديل التاريخ الهجري</string>
+    <string name="dialog_title_hijri_day_adjustment_preference">ضبط التاريخ الهجري</string>
+
+    <string name="title_qibla_direction">اتجاه القبلة</string>
+    <string name="desc_qibla_direction">تحديد اتجاه القبلة</string>
+    <string name="your_location">موقعك:</string>
+    <string name="unable_to_get_your_location">غير قادر على الحصول على موقعك</string>
+    <string name="location_not_ready">خدمة الموقع ليست جاهزة بعد</string>
+    <string name="pls_enable_location">يرجى تفعيل خدمة الموقع على هاتفك</string>
+    <string name="dialog_message_sensor_not_exist">جهازك لا يحتوي على المستشعرات المطلوبة</string>
+    <string name="dialog_title_sensor_not_calibrate">مطلوب معايرة</string>
+    <string name="dialog_message_sensor_not_calibrate">يرجى معايرة مستشعراتك ، من خلال توجيه هاتفك لأعلى وتحريكه في حركة على شكل 8</string>
+
+    <string name="school_adjustment_method_shafii">شافعي (افتراضي)</string>
+    <string name="school_adjustment_method_hanafi">حنفي</string>
+    <string name="title_school_adjustment_method">مدرسة</string>
+    <string name="midnight_mode_adjustment_method_standard">افتراضي (من منتصف غروب الشمس إلى شروقها)</string>
+    <string name="midnight_mode_adjustment_method_jafari">الجعفري (منتصف الغروب في الفجر)</string>
+    <string name="title_midnight_mode_adjustment_method">حساب منتصف الليل</string>
+    <string name="adthan_notification_title">حان وقت الصلاة</string>
+    <string name="adthan_reminder_notification_title">اقترب وقت الصلاة</string>
+    <string name="adthan_notification_close_action_title">كتم صوت الأذان وإغلاقه</string>
+
+    <string name="scheduling_adhan_alert_notification_title">غير قادر على جدولة موعد الأذان</string>
+    <string name="scheduling_adhan_alert_notification_text">تم إبطال إذن جدولة التنبيه الدقيق على هاتفك ، وبدون ذلك ، لا يمكنك تلقي أي إخطار بالأذان. يرجى منح هذا الإذن لمواصلة استخدام التطبيق بشكل صحيح</string>
+    <string name="scheduling_adhan_alert_notification_action_title">امنح هذا الإذن</string>
+    <!--   Errors Messages    -->
+
+    <string name="location_service_unavailable">لا يمكن العثور على موقعك: يرجى التحقق من تمكين خدمة الموقع على هاتفك أو تعيين موقعك يدويًا في قسم الإعدادات</string>
+    <string name="enable_to_reverse_geolocalisation">تعذر العثور على موقعك: الرجاء التحقق من اتصالك</string>
+    <string name="network_unavailable">تعذر تحديث تقويم الصلاة: يرجى التحقق من اتصالك</string>
+    <string name="message_wait_for_quran_files">جاري تنزيل المصحف ، برجاء الانتظار …</string>
+    <string name="message_download_quran_files_in_progress">%1$d%% تنزيل …</string>
+    <string name="message_unzip_quran_files_in_progress">%1$d\/%2$d … فك ضغط</string>
+    <string name="message_download_quran_files_error">خطأ في التنزيل ! يرجى التحقق من التخزين والشبكة الخاصة بك والمحاولة لاحقًا …</string>
+    <string name="message_unzip_quran_files_error">خطأ أثناء فك ضغط الملفات ! الرجاء التحقق من التخزين الخاص بك والمحاولة لاحقًا …</string>
+
+    <string name="sura_rev_mackkia">مكية</string>
+    <string name="sura_rev_madniaa">مدنية</string>
+    <string name="ayahs">آيات</string>
+    <string name="surat">سور القرآن</string>
+    <string name="bookmarks">إشارات مرجعية</string>
+    <string name="automatic_bookmarks_title">أكمل القراءة</string>
+    <string name="usermade_bookmarks_title">الصفحات المحفوظة</string>
+    <string name="msg_delete_bookmark_confirmation">هل تريد حذف هذه الإشارة المرجعية؟</string>
+    <string name="msg_empty_bookmarks_place_holer">لا توجد إشارات مرجعية !</string>
+
+    <string name="daily_verse_title">آية اليوم</string>
+    <string name="daily_verse__description">اقرأ آية اليوم</string>
+    <string name="daily_verse_notification_title">آية اليوم</string>
+    <string name="daily_verse_notification_description">اقرأ آية اليوم: %1$s - آية %2$d</string>
+    <string name="daily_verse_notification_action_title">شاهد المزيد</string>
+
+    <string name="juz_to_display">الجزء %d</string>
+    <string name="hizb_to_display">الحزب %d</string>
+    <string name="part_to_display">%s  الحزب  %d</string>
+    <string name="quran">القرآن الكريم</string>
+    <string name="desc_quran">اقرأ القرآن الكريم</string>
+    <string name="title_checkbox_quran_night_mode">وضع الليل</string>
+    <string name="title_notification_section">الإشعارات</string>
+    <string name="dialog_title_fajr_adhan">حدد أذان فجر</string>
+    <string name="dialog_title_adhan">حدد الأذان</string>
+
+    <string name="adhan_abdelbasset_abdessamad">عبد الباسط عبد الصمد</string>
+    <string name="adhan_al_haram_el_madani">الحرم المدني</string>
+    <string name="adhan_meshary_al_fasy">مشاري راشد العفاسي</string>
+    <string name="adhan_omar_al_kazabri">عمر القزابري</string>
+    <string name="adhan_riad_al_djazairi">رياض الجزائري</string>
+    <string name="adhan_manssour_el_zahrani">منصور الزهراني</string>
+    <string name="adhan_nurdin_al_haddiwi_fajr_morocco">نور الدين الحديوي</string>
+    <string name="adhan_nurdin_hamza_al_maghriby">نور الدين المغربي (القدس)</string>
+    <string name="adhan_sayed_al_nakshabandi">سيد النقشبندي</string>
+
+    <string name="short_prayer_call">تذكير قصير بالعربية</string>
+    <string name="takbeer_only_call">تكبير فقط</string>
+    <string name="title_adhan_fajr">أذان الفجر</string>
+    <string name="title_adhan_rest_prayers">أذان باقي الصلوات</string>
+    <string name="title_adhan">أذان</string>
+
+    <string name="names_view_title">أسماء الله الحسنى‎</string>
+    <string name="ndesc_ames_view_title"></string>
+
+    <string name="ALLAH_NAME_0">هو الإله الواحد الحق</string>
+    <string name="ALLAH_NAME_1">الرحمن</string>
+    <string name="ALLAH_NAME_2">الرحيم</string>
+    <string name="ALLAH_NAME_3">الملك</string>
+    <string name="ALLAH_NAME_4">القدوس</string>
+    <string name="ALLAH_NAME_5">السلام</string>
+    <string name="ALLAH_NAME_6">المؤمن</string>
+    <string name="ALLAH_NAME_7">المهيمن</string>
+    <string name="ALLAH_NAME_8">العزيز</string>
+    <string name="ALLAH_NAME_9">الجبار</string>
+    <string name="ALLAH_NAME_10">المتكبر</string>
+    <string name="ALLAH_NAME_11">الخالق</string>
+    <string name="ALLAH_NAME_12">البارئ</string>
+    <string name="ALLAH_NAME_13">المصور</string>
+    <string name="ALLAH_NAME_14">الغفار</string>
+    <string name="ALLAH_NAME_15">القهار</string>
+    <string name="ALLAH_NAME_16">الوهاب</string>
+    <string name="ALLAH_NAME_17">الرزاق</string>
+    <string name="ALLAH_NAME_18">الفتاح</string>
+    <string name="ALLAH_NAME_19">العليم</string>
+    <string name="ALLAH_NAME_20">القابض</string>
+    <string name="ALLAH_NAME_21">الباسط</string>
+    <string name="ALLAH_NAME_22">الخافض</string>
+    <string name="ALLAH_NAME_23">الرافع</string>
+    <string name="ALLAH_NAME_24">المعز</string>
+    <string name="ALLAH_NAME_25">المذل</string>
+    <string name="ALLAH_NAME_26">السميع</string>
+    <string name="ALLAH_NAME_27">البصير</string>
+    <string name="ALLAH_NAME_28">الحكم</string>
+    <string name="ALLAH_NAME_29">العدل</string>
+    <string name="ALLAH_NAME_30">اللطيف</string>
+    <string name="ALLAH_NAME_31">الخبير</string>
+    <string name="ALLAH_NAME_32">الحليم</string>
+    <string name="ALLAH_NAME_33">العظيم</string>
+    <string name="ALLAH_NAME_34">الغفور</string>
+    <string name="ALLAH_NAME_35">الشكور</string>
+    <string name="ALLAH_NAME_36">العلي</string>
+    <string name="ALLAH_NAME_37">الكبير</string>
+    <string name="ALLAH_NAME_38">الحفيظ</string>
+    <string name="ALLAH_NAME_39">المقيت</string>
+    <string name="ALLAH_NAME_40">الحسيب</string>
+    <string name="ALLAH_NAME_41">الجليل</string>
+    <string name="ALLAH_NAME_42">الكريم</string>
+    <string name="ALLAH_NAME_43">الرقيب</string>
+    <string name="ALLAH_NAME_44">المجيب</string>
+    <string name="ALLAH_NAME_45">الواسع</string>
+    <string name="ALLAH_NAME_46">الحكيم</string>
+    <string name="ALLAH_NAME_47">الودود</string>
+    <string name="ALLAH_NAME_48">المجيد</string>
+    <string name="ALLAH_NAME_49">الباعث</string>
+    <string name="ALLAH_NAME_50">الشهيد</string>
+    <string name="ALLAH_NAME_51">الحق</string>
+    <string name="ALLAH_NAME_52">الوكيل</string>
+    <string name="ALLAH_NAME_53">القوي</string>
+    <string name="ALLAH_NAME_54">المتين</string>
+    <string name="ALLAH_NAME_55">الولي</string>
+    <string name="ALLAH_NAME_56">الحميد</string>
+    <string name="ALLAH_NAME_57">المحصي</string>
+    <string name="ALLAH_NAME_58">المبدئ</string>
+    <string name="ALLAH_NAME_59">المعيد</string>
+    <string name="ALLAH_NAME_60">المحيي</string>
+    <string name="ALLAH_NAME_61">المميت</string>
+    <string name="ALLAH_NAME_62">الحي</string>
+    <string name="ALLAH_NAME_63">القيوم</string>
+    <string name="ALLAH_NAME_64">الواجد</string>
+    <string name="ALLAH_NAME_65">الماجد</string>
+    <string name="ALLAH_NAME_66">الواحد</string>
+    <string name="ALLAH_NAME_67">الأَحَدُ</string>
+    <string name="ALLAH_NAME_68">الصمد</string>
+    <string name="ALLAH_NAME_69">القادر</string>
+    <string name="ALLAH_NAME_70">المقتدر</string>
+    <string name="ALLAH_NAME_71">المقدم</string>
+    <string name="ALLAH_NAME_72">المؤخر</string>
+    <string name="ALLAH_NAME_73">الأول</string>
+    <string name="ALLAH_NAME_74">الآخر</string>
+    <string name="ALLAH_NAME_75">الظاهر</string>
+    <string name="ALLAH_NAME_76">الباطن</string>
+    <string name="ALLAH_NAME_77">الوالي</string>
+    <string name="ALLAH_NAME_78">المتعالي</string>
+    <string name="ALLAH_NAME_79">البر</string>
+    <string name="ALLAH_NAME_80">التواب</string>
+    <string name="ALLAH_NAME_81">المنتقم</string>
+    <string name="ALLAH_NAME_82">العفو</string>
+    <string name="ALLAH_NAME_83">الرؤوف</string>
+    <string name="ALLAH_NAME_84">مالك الملك</string>
+    <string name="ALLAH_NAME_85">ذو الجلال و الإكرام</string>
+    <string name="ALLAH_NAME_86">المقسط</string>
+    <string name="ALLAH_NAME_87">الجامع</string>
+    <string name="ALLAH_NAME_88">الغني</string>
+    <string name="ALLAH_NAME_89">المغنى</string>
+    <string name="ALLAH_NAME_90">المانع</string>
+    <string name="ALLAH_NAME_91">الضار</string>
+    <string name="ALLAH_NAME_92">النافع</string>
+    <string name="ALLAH_NAME_93">النور</string>
+    <string name="ALLAH_NAME_94">الهادي</string>
+    <string name="ALLAH_NAME_95">البديع</string>
+    <string name="ALLAH_NAME_96">الباقي</string>
+    <string name="ALLAH_NAME_97">الوارث</string>
+    <string name="ALLAH_NAME_98">الرشيد</string>
+    <string name="ALLAH_NAME_99">الصبور</string>
+    <string name="error_title">Error Activity</string>
+
+    <string name="title_weather_information_preference">معلومات الطقس</string>
+    <string name="title_weather_api_key">مفتاح واجهة التطبيق البرمجية (openweathermap.org)</string>
+    <string name="title_temperature_unit">وحدة درجة الحرارة</string>
+
+    <string name="temperature_unit_standard">ك</string>
+    <string name="temperature_unit_metric">°م</string>
+    <string name="temperature_unit_imperial">°ف</string>
+
+    <string name="title_temperature_unit_standard">وحدة الحرارة المطلقة</string>
+    <string name="title_temperature_unit_metric">درجة مئوية/ سلسيوس</string>
+    <string name="title_temperature_unit_imperial">فهرنهايت</string>
+</resources>
