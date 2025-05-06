@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="Today" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/lessons"
+        android:title="Quran" />
+
+
+    <item
+        android:id="@+id/navigation_madiation"
+        android:icon="@drawable/mediation"
+        android:title="Mediation" />
+    <item
+        android:id="@+id/navigation_pro"
+        android:icon="@drawable/profile1"
+        android:title="Mediation" />
+
+
+</menu>

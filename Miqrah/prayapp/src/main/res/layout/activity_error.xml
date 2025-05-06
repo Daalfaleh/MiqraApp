@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient_background"
+    tools:context="islam.muslim.app.ui.report.ErrorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"></LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/errorSorryView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sorry_string"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?attr/textColorPrimary"
+                android:textStyle="bold"
+                app:drawableLeftCompat="@drawable/ic_bug_80dp"
+                app:drawableStartCompat="@drawable/ic_bug_80dp"
+                app:tint="?attr/iconsMainColor" />
+
+            <TextView
+                android:id="@+id/errorDeviceHeadlineView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/what_device_headline"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="?attr/textColorSecondary"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/errorInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/errorInfoLabelsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_labels"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:id="@+id/errorInfosView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/errorDetailView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/error_details_headline"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="?attr/textColorSecondary"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/errorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:textColor="?attr/textColorPrimary"
+                    android:typeface="monospace" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/errorYourComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/your_comment"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="?attr/textColorSecondary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/errorCommentBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textColor="?attr/textColorPrimary"
+                android:inputType="" />
+
+            <Button
+                android:id="@+id/errorReportEmailButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/error_report_button_text"
+                android:textColor="?attr/textColorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/error_report_open_github_notice"
+                android:textColor="?attr/textColorPrimary"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/errorReportCopyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/copy_for_github"
+                android:textColor="?attr/textColorPrimary" />
+
+            <Button
+                android:id="@+id/errorReportGitHubButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/button"
+                android:text="@string/error_report_open_issue_button_text"
+                android:textColor="?attr/textColorPrimary" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

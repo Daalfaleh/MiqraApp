@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.faltenreich.skeletonlayout.SkeletonLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/skeletonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient_background"
+    android:fillViewport="true"
+    tools:context="islam.muslim.app.ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:background="@color/colorLightGray"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/todayDateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toTopOf="@+id/location_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Mercredi 21 Novembre, 2020" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:contentDescription="@string/your_location"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/location_text_view"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_location_15" />
+
+                <TextView
+                    android:id="@+id/location_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_middle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Republic of the congo" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sunrise_image_View"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+
+                    android:contentDescription="@string/common.sunrise"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_sunrise_60_dp"
+                    app:tint="@color/sunrise" />
+
+                <TextView
+                    android:id="@+id/sunrise_timing_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sunrise_image_View"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_middle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sunrise_image_View"
+                    tools:text="06:00 PM" />
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerHorizontal="true"
+                         android:orientation="vertical"
+                         >
+                         <TextView
+                             android:id="@+id/prayerTimetextView"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="8dp"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginEnd="8dp"
+                             android:layout_marginRight="8dp"
+                             android:fontFamily="sans-serif-condensed"
+                             android:gravity="center"
+                             android:maxLines="1"
+                             android:textSize="@dimen/text_xmlarge"
+                             android:textStyle="bold"
+
+                             tools:text="02:48 AM" />
+
+                         <TextView
+                             android:id="@+id/prayerNametextView"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="8dp"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginEnd="8dp"
+                             android:layout_below="@id/prayerTimetextView"
+                             android:layout_marginRight="8dp"
+                             android:layout_marginBottom="8dp"
+                             android:fontFamily="sans-serif-condensed"
+                             android:gravity="center"
+                             android:maxLines="1"
+                             android:textSize="@dimen/text_large"
+                             app:layout_constraintBottom_toTopOf="@+id/prayerTimetextView"
+                             app:layout_constraintEnd_toEndOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             tools:text="As`Sobh (Fajr)" />
+                          <RelativeLayout
+                              android:layout_width="wrap_content"
+                              android:layout_centerInParent="true"
+                              android:layout_below="@id/prayerNametextView"
+                              android:layout_height="wrap_content">
+                         <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                             android:id="@+id/circularProgressBar"
+                             android:layout_width="150dp"
+                             android:layout_height="150dp"
+                             app:cpb_background_progressbar_color="?attr/progressbarBackgroundColor"
+                             app:cpb_background_progressbar_width="5dp"
+                             app:cpb_progress_direction="to_right"
+                             app:cpb_progressbar_color="?attr/progressbarColor"
+                             app:cpb_progressbar_width="10dp"
+                             app:cpb_round_border="true"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintEnd_toEndOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                              <TextView
+                                  android:id="@+id/timeRemainingTextView"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="8dp"
+                                  android:layout_marginLeft="8dp"
+                                  android:layout_marginTop="8dp"
+                                  android:layout_marginEnd="8dp"
+                                  android:layout_marginRight="8dp"
+                                  android:layout_centerInParent="true"
+                                  android:fontFamily="sans-serif-condensed"
+                                  android:gravity="center"
+                                  android:maxLines="1"
+                                  android:textSize="@dimen/text_middle"
+                                  android:textStyle="normal"
+                                  app:layout_constraintEnd_toEndOf="parent"
+                                  app:layout_constraintStart_toStartOf="parent"
+                                  app:layout_constraintTop_toBottomOf="@+id/prayerTimetextView"
+                                  tools:text="- 04:15:50" />
+                          </RelativeLayout>
+
+
+
+
+                     </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/sunset_image_View"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/common.sunset"
+                   android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_sunset_60_dp"
+                    app:tint="@color/sunrise" />
+
+                <TextView
+                    android:id="@+id/sunset_timing_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/sunset_image_View"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_middle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sunset_image_View"
+                    tools:text="08:46 AM" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/fajr_label_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_middle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="A'Sobh" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fajr_call_constraint_layout"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/fajr_call_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:contentDescription="@string/title_adhan"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_notifications_on_24dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/fajr_timing_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_middle"
+                    tools:text="03:21 AM" />
+            </LinearLayout>
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"></Space>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/dohr_label_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/text_middle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="A'Dohr" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/dohr_call_constraint_layout"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@+id/dohr_call_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:contentDescription="@string/title_adhan"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_notifications_on_24dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/dohr_timing_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_middle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/dohr_call_constraint_layout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="03:21 AM" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"></Space>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/asr_label_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_middle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Al Asr" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/asr_call_constraint_layout"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/asr_call_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/title_adhan"
+                app:srcCompat="@drawable/ic_notifications_on_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/asr_timing_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="@dimen/text_middle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/asr_call_constraint_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="03:21 AM" />
+        </LinearLayout>
+        <Space
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"></Space>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/maghrib_label_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="@dimen/text_middle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Al Maghreb" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/maghreb_call_constraint_layout"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/maghreb_call_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/title_adhan"
+                app:srcCompat="@drawable/ic_notifications_on_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/maghreb_timing_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="@dimen/text_middle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/maghreb_call_constraint_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="03:21 AM" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"></Space>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/icha_label_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_middle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Al Ichaa" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/icha_call_constraint_layout"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/icha_call_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/title_adhan"
+                app:srcCompat="@drawable/ic_notifications_on_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/icha_timing_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="@dimen/text_middle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icha_call_constraint_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="03:21 AM" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+        </LinearLayout>
+
+        <!--  <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/next_prayer_constraint_container"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_marginTop="4dp"
+              android:elevation="1dp"
+              android:outlineProvider="bounds"
+              app:layout_constraintBottom_toTopOf="@+id/tmings_constraint_container"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHeight_percent="0.35"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:targetApi="lollipop">
+
+              <include
+                  layout="@layout/fragment_home_next_prayer_layout"
+                  android:visibility="visible"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent" />
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/tmings_constraint_container"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_marginTop="0dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHeight_percent="0.65"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/next_prayer_constraint_container">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:id="@+id/timings_first_row_constraint_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  app:layout_constraintBottom_toTopOf="@+id/timings_second_row_constraint_layout"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHeight_percent="0.45"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+
+                  <include
+                      layout="@layout/fragment_home_timings_first_row_layout"
+                      android:visibility="visible"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:id="@+id/timings_second_row_constraint_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  app:layout_constraintBottom_toBottomOf="@+id/method_row_constraint_layout"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHeight_percent="0.45"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/timings_first_row_constraint_layout">
+
+
+                  <include
+                      layout="@layout/fragment_home_timings_second_row_portrait_layout"
+                      android:visibility="visible"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:id="@+id/method_row_constraint_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHeight_percent="0.10"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/timings_second_row_constraint_layout">
+
+                  <androidx.constraintlayout.widget.ConstraintLayout
+                      android:id="@+id/method_layout"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintVertical_bias="0.0">
+
+                      <ImageView
+                          android:layout_width="15dp"
+                          android:layout_height="15dp"
+                          android:layout_marginEnd="4dp"
+                          android:layout_marginRight="4dp"
+                          android:contentDescription="@string/your_location"
+                          app:layout_constraintBottom_toBottomOf="parent"
+                          app:layout_constraintEnd_toStartOf="@+id/calculation_method_text_view"
+                          app:layout_constraintTop_toTopOf="parent"
+                          app:srcCompat="@drawable/ic_information_24dp" />
+
+                      <TextView
+                          android:id="@+id/calculation_method_text_view"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="32dp"
+                          android:layout_marginLeft="32dp"
+                          android:ellipsize="end"
+                          android:fontFamily="sans-serif-condensed"
+                          android:gravity="start|top"
+                          android:maxLines="1"
+                          android:scrollHorizontally="true"
+                          android:textColor="?attr/textColorSecondary"
+                          android:textSize="@dimen/text_middle"
+                          android:textStyle="normal"
+                          app:autoSizeTextType="uniform"
+                          app:layout_constraintBottom_toBottomOf="parent"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintHorizontal_bias="0.0"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toTopOf="parent"
+                          app:layout_constraintVertical_bias="0.0"
+                          tools:text="L\'Union des Organisations Islamiques de France (UOIF)" />
+                  </androidx.constraintlayout.widget.ConstraintLayout>
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+          </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+
+        android:contentDescription="@string/your_location"
+        app:srcCompat="@drawable/ic_information_24dp" />
+
+    <TextView
+        android:id="@+id/calculation_method_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="start|top"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textSize="@dimen/text_middle"
+        android:textStyle="normal"
+        app:autoSizeTextType="uniform"
+        tools:text="L\'Union des Organisations Islamiques de France (UOIF)" />
+
+</RelativeLayout>
+</com.faltenreich.skeletonlayout.SkeletonLayout>
